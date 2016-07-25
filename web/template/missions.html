@@ -1,0 +1,17 @@
+<div class="row" ng-app="missionDetail">
+    <div class="col-md-8 container-fluid">
+        <div class="col-md-6 col-sm-12" ng-repeat="mission in $ctrl.missions">
+            <div class="photo">
+                <img ng-src="{{mission.picUrls[mission.showIndex]}}">
+                <a href="" ng-click="nextImage(mission)">Next</a>
+                <a href="" ng-click="previousImage(mission)">Previous</a>
+            </div>
+            <div class="review">
+                <div class="icon">
+
+                </div>
+            </div>
+            {{mission.name}}
+        </div>
+    </div>
+</div>
